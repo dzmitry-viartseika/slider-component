@@ -8,7 +8,7 @@
 export default {
   name: 'v-slider-item',
   props: {
-    vsliderItem: {
+    sliderItems: {
       type: Array,
       default: () => [],
     },
