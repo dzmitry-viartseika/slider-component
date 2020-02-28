@@ -44,6 +44,7 @@
       "parser": "babel-eslint"
     },
     "rules": {
+      "no-plusplus": "off",
       "linebreak-style": [0,"error", "windows"]
     },
     "overrides": [

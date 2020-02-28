@@ -1,19 +1,18 @@
 <template>
   <div id="app">
-    <vslider></vslider>
-    <vsliderItem :sliderItems="sliderItems"></vsliderItem>
+    <vslider :sliderItems="sliderItems"
+             :interval="2000"
+    ></vslider>
   </div>
 </template>
 
 <script>
 import vslider from './components/v-slider.vue';
-import vsliderItem from './components/v-slider-item.vue';
 
 export default {
   name: 'App',
   components: {
     vslider,
-    vsliderItem,
   },
   data() {
     return {
@@ -21,22 +20,22 @@ export default {
         {
           id: 1,
           name: 'image1',
-          img: 'img1.png',
+          img: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg',
         },
         {
           id: 2,
           name: 'image2',
-          img: 'img2.png',
+          img: 'https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-1.2.1&w=1000&q=80',
         },
         {
           id: 3,
           name: 'image3',
-          img: 'img3.png',
+          img: 'https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500',
         },
         {
           id: 4,
           name: 'image4',
-          img: 'img4.png',
+          img: 'https://www.istockphoto.com/resources/images/PhotoFTLP/NatureLandscapes-519760984.jpg',
         },
       ],
     };
